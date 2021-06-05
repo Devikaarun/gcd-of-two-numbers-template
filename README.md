@@ -1,2 +1,24 @@
-# gcd-of-two-numbers-template
-The template repository for the GCD of two numbers course on Learning Lab.
+#python program to print gcd of two numbers
+
+def hcf(a, b): 
+
+    if(b == 0): 
+
+        return a 
+
+    else: 
+
+        return hcf(b, a % b) 
+
+  
+
+a = 60
+
+b = 48
+
+  
+# prints 12 
+
+print("The gcd of 60 and 48 is : ", end="") 
+
+print(hcf(60, 48)) 
